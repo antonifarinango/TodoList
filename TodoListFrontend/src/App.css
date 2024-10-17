@@ -1,0 +1,31 @@
+.contenedor{
+    background-color: rgb(70, 73, 75);
+}
+.lista::-webkit-scrollbar{
+    width: 8px;
+}
+.lista::-webkit-scrollbar-thumb {
+    background-color: rgb(128, 181, 228); /* Color de la barra de desplazamiento */
+    border-radius: 4px; /* Bordes redondeados */
+}
+.botonEliminar{
+    border: none;
+    background-color: transparent;
+}
+
+.titulo{
+    animation: aparecer 3s 1 ;
+}
+
+.tituloLista{
+    animation: aparecer 3s 1 ;
+}
+
+@keyframes aparecer{
+    0%{
+        color: transparent;
+    }50%{
+        color: #000;
+    }
+}
+
