@@ -6,10 +6,12 @@ package com.todoList.controller;
 
 import com.todoList.entities.Tarea;
 import com.todoList.serviceImplement.TareaServiceImplement;
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -84,5 +86,18 @@ public class TareaController {
         return ResponseEntity.ok(response);
         
     }
+    
+    //FILTRAR TAREA POR FECHA DE CREACION
+    @GetMapping("filtrarPorFecha")
+    public ResponseEntity<?> filtrarTareaPorFecha (@RequestBody LocalDate fechacreacion){
+        
+        List<Tarea> tareasFiltradas = tareaServiceImplement.filtrarTareaPorFecha(fechacreacion);
+        
+        
+        return new ResponseEntity<>(tareasFiltradas,HttpStatus.OK);
+        
+        
+    }
+    
     
 }
