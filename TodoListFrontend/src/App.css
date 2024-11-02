@@ -1,6 +1,43 @@
 .contenedor{
-    background-color: rgb(70, 73, 75);
+    background-color: rgb(41, 64, 80);
 }
+
+textarea{
+    height: 55px;
+    resize: none;
+}
+
+.lista{ 
+    min-height: 80px;
+    max-height:384px; 
+    width:100%;
+    display: flex;
+    overflow: scroll;
+}
+
+
+.contenedor-listaTareas{
+    background-color: rgb(169, 200, 228);
+    display: flex;
+    flex-direction: column-reverse;
+}
+.contenedor-lista{
+    width: 100%;
+}
+
+.div-tarea-content{
+    display: flex;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.btn-vermas{
+    background-color: transparent;
+    border: 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
 .lista::-webkit-scrollbar{
     width: 8px;
 }
@@ -15,11 +52,58 @@
 
 .titulo{
     animation: aparecer 3s 1 ;
+    color: #000;
 }
 
 .tituloLista{
     animation: aparecer 3s 1 ;
 }
+
+.contenedor-vermas{
+    background-color: rgba(40, 134, 216, 0.781);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    display: none;
+    z-index: 10000;
+    position: absolute;
+}
+.contenedor-vermas-active{
+    background-color: rgba(40, 134, 216, 0.856);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    z-index: 10000;
+    position: absolute;
+}
+
+.contenido-vermas{
+    min-width: 380px;
+    background-color: #ffffffe0;
+}
+
+.span-vermas{
+    color: #1fa5bd;
+}
+.textarea-vermas-titulo{
+    width: 100%;
+    min-height: 100px;
+    max-height: 100px;
+    border:none;
+    background-color: transparent;
+}
+.textarea-vermas-decripcion{
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    border: none;
+    background-color: transparent;
+}
+
+
 
 @keyframes aparecer{
     0%{
@@ -28,4 +112,6 @@
         color: #000;
     }
 }
+
+
 

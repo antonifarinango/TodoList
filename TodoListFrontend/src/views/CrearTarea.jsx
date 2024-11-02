@@ -56,7 +56,7 @@ function CrearTarea() {
           <label htmlFor="" className="form-label">
             Título
           </label>
-          <input
+          <textarea
             type="text"
             className="form-control"
             name=""
@@ -71,7 +71,7 @@ function CrearTarea() {
           <label htmlFor="" className="form-label">
             Descripción
           </label>
-          <input
+          <textarea
             type="text"
             className="form-control"
             name=""

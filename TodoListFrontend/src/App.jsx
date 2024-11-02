@@ -15,8 +15,6 @@ function App() {
             <Route path="/editar-tarea/:id" element={<ListaTareas/>}></Route>
           </Routes>
         </BrowserRouter>
-        
-        
       </div>
     </>
   )
