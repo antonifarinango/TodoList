@@ -158,7 +158,7 @@ function ListaTareas() {
                 <textarea
                   readOnly
                   value={tareaSeleccionada.titulo}
-                  className="textarea-vermas-titulo p-2"
+                  className="textarea-vermas-titulo p-2 fw-bold"
                 ></textarea>
               </div>
               <div>
@@ -228,7 +228,7 @@ function ListaTareas() {
                   className="content-lista list-group-item rounded-3 list-group-item-action d-flex justify-content-between gap-3"
                 >
                   <div className="div-tarea-content d-flex flex-column">
-                    <div className="div-titulo-content">
+                    <div className="div-titulo-content fw-bold ">
                       {tarea.titulo && tarea.titulo.length > 15
                         ? tarea.titulo.slice(0, 20) + "..."
                         : tarea.titulo}
