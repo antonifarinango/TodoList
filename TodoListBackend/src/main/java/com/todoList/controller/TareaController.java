@@ -87,17 +87,4 @@ public class TareaController {
         
     }
     
-    //FILTRAR TAREA POR FECHA DE CREACION
-    @GetMapping("filtrarPorFecha")
-    public ResponseEntity<?> filtrarTareaPorFecha (@RequestBody LocalDate fechacreacion){
-        
-        List<Tarea> tareasFiltradas = tareaServiceImplement.filtrarTareaPorFecha(fechacreacion);
-        
-        
-        return new ResponseEntity<>(tareasFiltradas,HttpStatus.OK);
-        
-        
-    }
-    
-    
 }
