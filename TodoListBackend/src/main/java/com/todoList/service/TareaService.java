@@ -5,7 +5,6 @@
 package com.todoList.service;
 
 import com.todoList.entities.Tarea;
-import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -31,9 +30,5 @@ public interface TareaService {
     
     //ELIMINAR TODO
     void eliminarTodo();
-    
-    //FILTRAR POR FECHA
-    List<Tarea> filtrarTareaPorFecha(LocalDate fecha);
-    
     
 }
